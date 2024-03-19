@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #a48def, #5a6ce2);
+}
+
+.container{
+  width: 50%;
+  background-color: #7eff77;
+  padding: 18px 18px 0 18px;
+}
+
+
+.page-title{
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 18px;
+  color:#444201;
+  border-bottom: 1px dotted rgb(16, 18, 13);
+
+}
+
+.sort{
+    float: right;
+    margin: 8px 0;
+}
+label{
+  font-size: 16px;
+  color: #320606;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+#sortDropdown {
+    display: inline-block;
+  }
+
+  select {
+    font-size: 14px;
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+
+  option {
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+  }
+
+  .search-section{
+    display: flex;
+    align-items: center;
+    transform: translateY(10px);
+    margin: 12px 0;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search-input {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: 1px solid #003702;
+  border-radius: 3px;
+  background-color: #006803;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.search-button:hover {
+    background-color:#015604;
+}
+
+.mark-search {
+  margin: 24px 0;
+  width: 100%;
+
+}
+
+.mark-input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+.filter-button {
+  padding: 5px 10px;
+  border: 1px solid #003702;
+  border-radius: 3px;
+  background-color: #006803;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #015604;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #bfb900;
+    margin: 16px 0;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #a8a301;
+  }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Students Table</title>
+      <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="page-title">Students Details</h1>
+
+            <div class="filters">
+                <div class="sort">
+                    <label for="sortDropdown">Sort By:</label>
+                    <select id="sortDropdown" onchange="handleSelection()">
+                        <option value="name" >Select</option>
+                        <option value="name" onselect="sortByName()">Name</option>
+                        <option value="age" onclick="sortByAge()">Age</option>
+                        <option value="department" onclick="sortByDepartment()">Department</option>
+                        <option value="totalMarks" onclick="">Total Marks</option>
+                    </select>
+                </div>
+            
+                <div class="search-section">
+                    <label for="searchInput">Search:</label>
+                    <div class="search-container">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Enter Student name">
+                        <button class="search-button" onclick="searchStudentName()">Search</button>
+                    </div>
+                </div>
+            
+                <div class="mark-search">
+                    <label class="mark-label" for="filterInput">Filter by total marks greater than:</label>
+                    <input class="mark-input" type="number" id="filterInput" placeholder="0">
+                    <button onclick="filterStudents()" class="filter-button">Filter</button>
+                </div>
+            </div>
+
+              <table id="studentsTable">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Department</th>
+                    <th>Total Marks</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+              </table>
+
+        </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
+
